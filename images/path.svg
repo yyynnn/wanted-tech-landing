@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520.59 401.18">
+	<animate attributeType="CSS" attributeName="opacity"
+				 from="1" to="0" dur="5s" repeatCount="indefinite" />
+                  <path class="sc1-path-bg" d="M505.38.08s7.86,34.74-13.5,48c-43.5,27-138-14.5-242.61-1.21C150.27,59.45.38,122.58.38,160.58c0,51.5,161.47,31.45,258,13.5,123-22.87,253.71,4.27,261.5,57,8.5,57.5-143.5,98.5-248.5,56.5S75.5,328.5,73.5,361" fill="none" stroke="#e6e6e6" stroke-miterlimit="10" stroke-width="0.75"></path>
+                </svg>
