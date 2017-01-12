@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg class="svg2-brick" xmlns="http://www.w3.org/2000/svg" width="80" height="180" viewbox="0 0 80 140">
-	<g fill="none" fill-rule="evenodd" transform="translate(-320 -135)">
-		<path fill="#E1E1E1" d="M378.6018 271.5522l-36.276-16.74-15.847-85.654 36.275 16.74"/>
-		<path fill="#D9D9D9" d="M378.608 271.5859l14.552-10.135-15.848-85.654-14.552 10.135"/>
-		<path fill="#EEE" d="M326.3841 169.3496l14.552-10.135 36.376 16.583-14.552 10.135"/>
-		<path stroke="#FFF" stroke-width=".75" d="M362.7605 185.9321l-36.247-16.584m50.7988 6.4492l-14.552 10.135"/>
-		<path stroke="#F3F3F3" stroke-width=".75" d="M362.7605 185.9321l15.835 85.587"/>
-		<path fill="#A1A1A1" d="M357.567 224.9531l-22.696-10.454-1.263-6.789 22.704 10.459m3.8594 20.8608l-22.692-10.391-1.255-6.784 22.692 10.391"/>
-	</g>
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 408 90.9" style="enable-background:new 0 0 408 90.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E2C119;}
+	.st1{fill:#F3D642;stroke:#FFF1B1;stroke-width:0.75;}
+</style>
+<path class="st0" d="M175,90.9V18.2L204.7,0v73.8L175,90.9"/>
+<path class="st1" d="M175,90.9V18.2L145.3,1v72.7L175,90.9"/>
 </svg>

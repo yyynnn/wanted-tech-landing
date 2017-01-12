@@ -91,8 +91,8 @@ margin-bottom: 0px;
   }
  }
 #section1 {
-  .svg-outter{
-    position: relative;
+  .svg4-outter{
+    position: absolute!important
   }
   .h2market{
         margin: 0px 50px
@@ -105,10 +105,11 @@ margin-bottom: 0px;
   .h2-0{ margin-bottom: 40px; font-weight: 500; }
   .column{ padding: 0 10px; z-index: 2 };
   .sc1-img{
-    display: inline-block;
+    // display: inline-block;
   };
   .sc1-img4{
      height:344px;
+         position: relative;
   }
   p {
     b{
@@ -125,6 +126,9 @@ margin-bottom: 0px;
   .h2 { @extend .fs34; padding-bottom: 75px;}
   .caption  { @extend .fs22; @extend .fw300; padding-top: 30px;}
   background-color: $paleGray;};
+
+
+
   #section3 {
   .h2 { @extend .fs34; padding-bottom: 30px; }
   .caption strong { @extend .fs22; line-height: 40px; }
@@ -147,6 +151,7 @@ margin-bottom: 0px;
   background-color: $white;
 }
 #section4 {
+
   .input1{
     width: 307px;
   }
@@ -157,7 +162,7 @@ margin-bottom: 0px;
     width: 337px;
   }
   .sc4-form {       margin: auto;
-     padding: 50px; background-color: #f3f5f9; border-radius: 10px;box-shadow: 0 0 112px rgba(#f2f4f9, 0.7);}
+     padding: 50px; background-color: #f3f5f9; border-radius: 10px;box-shadow: 0 0 112px rgba(#f2f4f9, 0.45);}
   .h2 strong { @extend .fs34; color: $white;}
   .caption {
     strong { @extend .fs22; line-height: 58px; }
@@ -190,11 +195,8 @@ textarea{
 .control{
   margin-bottom: 10px
 }
-  background: -webkit-linear-gradient(323deg, #705fc5, #3d9ee8, #45bd62);
-  background: linear-gradient(127deg, #705fc5, #3d9ee8, #45bd62);
-  background-size: 400% 400%;
-  -webkit-animation: dynColorChangeBG 10s ease infinite;
-  animation: dynColorChangeBG 10s ease infinite;
+background: #6054c8;
+
   }
 .h1 { @extend .fs55, .fw900; color: $dGray; margin: 0 0 30px 0;};
 .h2 { @extend .fs26, .fw300; color: $steel; text-align: center;}
@@ -217,10 +219,10 @@ textarea{
       margin: 40px 0 100px;
       outline: none;
   &:hover {
-    background: #6e62ab;
-    box-shadow: 0 20px 25px -10px #705fc5;
+    background: #5f48a4;
+    box-shadow: 0 9px 25px -10px rgba(112, 95, 197, 0.69);
     -webkit-transform: scale3d(1.06, 1.06, 1);
-            transform: scale3d(1.06, 1.06, 1);
+    transform: scale3d(1.06, 1.06, 1);
   }
 };
 #section4 .iris-button{
@@ -351,6 +353,11 @@ stroke-dashoffset: 1000px;
   .sc1-img3{
               left: -111px!important
     }
+
+    .sc1-path-wrap {
+                transform: scaleY(1.2) scaleX(1.3) translateY(-50%) translateX(-50%)!important
+
+  }
 }
 
 @media screen and (min-width: 2100px) {
@@ -363,9 +370,8 @@ stroke-dashoffset: 1000px;
       }
   }
   .sc1-path-wrap {
-      -webkit-transform: scaleY(1.2) scaleX(1.2) translateY(-50%) translateX(-50%);
-              transform: scaleY(1.2) scaleX(1.2) translateY(-50%) translateX(-50%);
-  
+              transform: scaleY(1.2) scaleX(1) translateY(-50%) translateX(-50%);
+
 }
 
 @media screen and (min-width: 1180px) {
@@ -383,13 +389,16 @@ stroke-dashoffset: 1000px;
     margin: auto;
     min-width: 772px;
     width: 772px;}
-
+    #section1 .sc1-img4 {
+        left: 110px;
+    top: 25px;
+    }
   .h2-0{ margin-bottom: 70px;  width: 690px!important; }
   .h2-1{ margin-top: 27px }
   .sc1-img1{ position: absolute;     right: 52px; margin-top: -19px; }
-  .sc1-img2{ position: relative; left: -190px; bottom: -39px; }
+  .sc1-img2{ position: relative; left: -190px; bottom: -39px; display: inline-block; }
   .sc1-row2 { height: 320px; }
-  .sc1-img3 { position: relative; margin-left: -123px; margin-top: 52px; left: -12px; }
+  .sc1-img3 { position: relative; margin-left: -123px; margin-top: 52px; left: -12px; display: inline-block;}
   .sc1-row3 { height: 250px; text-align: center;}
   .section1 column { text-align: center; }
   #section1 .h2 { width: 250px }
@@ -439,10 +448,10 @@ stroke-dashoffset: 1000px;
   }
 @media (max-width: 980px) {
   .svg-outter{
-    margin-top: -70px;
+    margin-top: -100px;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 57%;
     transform: scale(0.8) translateY(-50%) translateX(-50%);
     transform-origin: left;
   }
@@ -489,6 +498,10 @@ stroke-dashoffset: 1000px;
 }
 }
 @media (max-width: 503px) {
+  .sc1-img{
+    transform: scale(0.9);
+transform-origin: center;
+  }
 .input1,.input2,.input3{
     width: 100%!important;
   }
@@ -497,8 +510,6 @@ stroke-dashoffset: 1000px;
         margin: 0 0!important
   }
   .svg-outter{
-    transform: scale(0.7) translateY(-50%) translateX(-50%);
-
   }
   .h2-0{
     font-size: 20px!important;
@@ -533,11 +544,6 @@ hr{
 }
 }
 
-@keyframes dynColorChangeBG {
-    0%{background-position:0% 9%}
-    50%{background-position:100% 92%}
-    100%{background-position:0% 9%}
-}
 
 
 @keyframes scaleCircleInner {
@@ -955,3 +961,108 @@ transform-origin: bottom;
 
     }
 }
+
+#cf-steam1{
+  animation: moveandfade 4s infinite ease;
+  transform-origin: center;
+}
+#cf-steam2{
+  animation: moveandfade 4s infinite ease 2.3s;
+  transform-origin: center;
+}
+
+@keyframes moveandfade {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+  }
+
+
+
+  .wrapper {
+    position: relative;
+    margin: 40px auto;
+    background: white;
+  }
+
+  .wrapper, .wrapper * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    width: 31px;
+    height: 31px;
+    position: absolute;
+left: 104px;
+top: -15px;
+  }
+
+  .wrapper .pie {
+    width: 50%;
+    height: 100%;
+    transform-origin: 100% 50%;
+    position: absolute;
+    background: #45bd62;
+  }
+
+  .wrapper .spinner {
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    z-index: 200;
+    border-right: none;
+    animation: rota 5s linear infinite;
+  }
+
+  .wrapper:hover .spinner,
+  .wrapper:hover .filler,
+  .wrapper:hover .mask {
+    animation-play-state: running;
+  }
+
+  .wrapper .filler {
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+    left: 50%;
+    opacity: 0;
+    z-index: 100;
+    animation: opa 5s steps(1, end) infinite reverse;
+    border-left: none;
+  }
+
+  .wrapper .mask {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    opacity: 1;
+    z-index: 300;
+    animation: opa 5s steps(1, end) infinite;
+  }
+
+  @keyframes rota {
+    0% {
+      transform: rotate(-360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes opa {
+    0% {
+      opacity: 1;
+    }
+    50%, 100% {
+      opacity: 0;
+    }
+  }
