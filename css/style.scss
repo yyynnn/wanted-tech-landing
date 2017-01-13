@@ -971,13 +971,9 @@ transform-origin: bottom;
   transform-origin: center;
 }
 
-.timer-wrap{
-  position: absolute;
-  left: 154px;
-  top: 25px;
-}
 #timer247{
-position: relative;
+  position: absolute;
+  transform: translate(24px,25px);
 }
 
 @keyframes moveandfade {
