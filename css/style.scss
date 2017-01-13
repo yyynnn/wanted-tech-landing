@@ -130,6 +130,7 @@ margin-bottom: 0px;
 
 
   #section3 {
+
   .h2 { @extend .fs34; padding-bottom: 30px; }
   .caption strong { @extend .fs22; line-height: 40px; }
   .caption { @extend .fs18; @extend .fw300; line-height: 30px; }
@@ -447,6 +448,8 @@ stroke-dashoffset: 1000px;
 
   }
 @media (max-width: 980px) {
+  .has-text-right{ text-align: center!important}
+  .column.has-text-left{ text-align: center!important}
   .svg-outter{
     margin-top: -100px;
     position: absolute;
@@ -972,8 +975,12 @@ transform-origin: bottom;
 }
 
 #timer247{
-  position: absolute;
-  transform: translate(24px,25px);
+  position: relative;
+      transform: translate(-46px, -17px);
+}
+#timet-outter{
+  position: relative;
+  left: 13px;
 }
 
 @keyframes moveandfade {
