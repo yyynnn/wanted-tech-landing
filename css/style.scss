@@ -64,7 +64,8 @@ margin-bottom: 0px;
 .fw900 { font-weight: 900 }
 .padding-bottom50 { padding-bottom: 50px }
 .justify-flex{ -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-.justify-flex-vert{ -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.justify-flex-vert{ display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.justify-flex-vert-only{display: flex; align-items: center;}
 .item {
     vertical-align: top;
     display: inline-block;
@@ -125,7 +126,10 @@ margin-bottom: 0px;
   .item { padding-bottom: 60px; }
   .h2 { @extend .fs34; padding-bottom: 75px;}
   .caption  { @extend .fs22; @extend .fw300; padding-top: 30px;}
-  background-color: $paleGray;};
+  background-color: $white;
+  padding-top: 80px;
+
+};
 
 
 
@@ -217,7 +221,7 @@ background: #6054c8;
   color: $white;
   -webkit-transition: 300ms all ease;
   transition: 300ms all ease;
-      margin: 40px 0 100px;
+      margin: 22px 0 100px;
       outline: none;
   &:hover {
     background: #5f48a4;
@@ -325,7 +329,6 @@ footer .has-text-left{
 .sc3-arrow{
   stroke-dasharray: 296px;
   stroke-dashoffset: 590px;
-  animation: strokeFillIcons 5000ms ease-in-out alternate infinite;
 }
 
 .sc1-path-wrap{
@@ -974,14 +977,6 @@ transform-origin: bottom;
   transform-origin: center;
 }
 
-#timer247{
-  position: relative;
-      transform: translate(-46px, -17px);
-}
-#timet-outter{
-  position: relative;
-  left: 13px;
-}
 
 @keyframes moveandfade {
     0% {
@@ -989,7 +984,7 @@ transform-origin: bottom;
       transform: translateY(10px);
     }
     50% {
-      opacity: 1;
+      opacity: 0.3;
     }
     75% {
       opacity: 0;
@@ -999,3 +994,25 @@ transform-origin: bottom;
       opacity: 0;
     }
   }
+
+
+  #timer-outter{
+    position: absolute;
+    width: 22px;
+    height: 12px;
+}
+
+.sc3-clock{
+  animation-fill-mode: forwards;
+ }
+
+
+ @keyframes clockfill {
+   0% {
+       stroke-dashoffset: 22;
+     }
+
+   100% {
+       stroke-dashoffset: 60.3;
+     }
+ }
