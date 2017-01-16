@@ -41,8 +41,8 @@ hr {
     display: block;
     height: 1px;
     margin: 100px auto;
-    width: 90vw;
 };
+a:hover{color: $white;}
 footer{
   color: $dGray;
   font-weight: 500;
@@ -104,7 +104,9 @@ margin-bottom: 0px;
   }
   .sc1-row1,.sc1-row3{ text-align: right;}
   .h2-0{ margin-bottom: 40px; font-weight: 500; }
-  .column{ padding: 0 10px; z-index: 2 };
+  .column{
+    // padding: 0 10px;
+     z-index: 2 };
   .sc1-img{
     // display: inline-block;
   };
@@ -210,26 +212,34 @@ background: #6054c8;
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: $iris;
-  padding: 12px 20px 15px 20px;
+  background-color: #705fc5;
+  padding: 14px 26px 16px 26px;
   width: 210px;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   text-align: center;
-  color: $white;
-  -webkit-transition: 300ms all ease;
-  transition: 300ms all ease;
-      margin: 22px 0 100px;
-      outline: none;
+  color: #fff;
+  transition: 400ms all ease-in-out;
+  margin: 22px 0 100px;
+  outline: none;
   &:hover {
     background: #5f48a4;
     box-shadow: 0 9px 25px -10px rgba(112, 95, 197, 0.69);
-    -webkit-transform: scale3d(1.06, 1.06, 1);
     transform: scale3d(1.06, 1.06, 1);
   }
+
+}
+button[disabled=disabled], button:disabled{
+    background: #ff7c3c;
+    animation: buttonLoad 3s ease-in-out infinite;
 };
+button[disabled]:hover {
+    background: #ff7c3c;
+}
+
+
 #section4 .iris-button{
   margin: 10px 0;
 }
@@ -294,8 +304,7 @@ footer .has-text-left{
 #circle{
   stroke-dasharray: 1000px;
   stroke-dashoffset: 1000px;
-          animation: strokeFill 2200ms ease-in-out;
-  -webkit-animation-fill-mode: forwards;
+          animation: strokeFill 2000ms ease-in-out;
           animation-fill-mode: forwards;
 }
 #diamond{
@@ -313,8 +322,8 @@ footer .has-text-left{
   stroke-dashoffset: 1000px;
 
           animation: strokeFill 2000ms ease-out;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
           animation-fill-mode: forwards;
 }
 
@@ -323,11 +332,9 @@ footer .has-text-left{
   stroke-dashoffset: 1000px;
   -webkit-animation: strokeFill 2000ms ease-in-out;
           animation: strokeFill 2000ms ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 .sc3-arrow{
-  stroke-dasharray: 296px;
+  stroke-dasharray: 295px;
   stroke-dashoffset: 590px;
 }
 
@@ -451,6 +458,9 @@ stroke-dashoffset: 1000px;
 
   }
 @media (max-width: 980px) {
+  .sc1-img2-outter{
+    margin-top: -160px!important;
+  }
   .has-text-right{ text-align: center!important}
   .column.has-text-left{ text-align: center!important}
   .svg-outter{
@@ -594,23 +604,19 @@ hr{
 
 @keyframes zoomIn {
   0% {
-    -webkit-filter: blur(0);
-            filter: blur(0);
+
     opacity: 0;
     -webkit-transform: translate(-50%, -50%) scale3d(1.4, 1.4, 1);
             transform: translate(-50%, -50%) scale3d(1.4, 1.4, 1);
   }
 
   30%,70% {
-    -webkit-filter: blur(0);
-            filter: blur(0);
+
     opacity: 1;
     -webkit-transform: translate(-50%, -50%) scale3d(1, 1, 1);
             transform: translate(-50%, -50%) scale3d(1, 1, 1);
   }
   100% {
-    -webkit-filter: blur(100px);
-            filter: blur(100px);
     opacity: 0;
     -webkit-transform: translate(-50%, -50%) scale3d(.4, .4, 1);
             transform: translate(-50%, -50%) scale3d(.4, .4, 1);
@@ -632,7 +638,7 @@ hr{
   0%,100% {
     stroke-dashoffset: 1000px;
   }
-  30%,70% {
+  50%,70% {
     stroke-dashoffset: 0px;
   }
 }
@@ -1016,3 +1022,60 @@ transform-origin: bottom;
        stroke-dashoffset: 60.3;
      }
  }
+
+
+@keyframes buttonLoad {
+  0% {
+    box-shadow: inset 480px 0px 0px -500px #45bd62;
+      border-radius: 5px;
+      transform: scale3d(1,1,1);
+    }
+    12% {
+        border-radius: 30px;
+        transform: scale3d(1.05,1.05,1);
+      }
+
+    25% {
+        border-radius: 25px;
+        transform: scale3d(1.1,1.1,1);
+      }
+      37% {
+          border-radius: 30px;
+          transform: scale3d(1.05,1.05,1);
+        }
+
+    50% {
+        border-radius: 30px;
+        transform: scale3d(1.1,1.1,1);
+      }
+
+      75% {
+          border-radius: 30px;
+          transform: scale3d(1.05,1.05,1);
+          background: #ff7c3c;
+        }
+
+  100% {
+    box-shadow: inset 730px 0px 0px -500px #45bd62;
+      border-radius: 5px;
+      transform: scale3d(1,1,1);
+      background: #45bd62;
+    }
+}
+
+#footer-logo {
+  height: 35px;
+  margin-top: 6px;
+  width: 130px;
+  display: inline-block;
+ background:transparent url('../images/gylogo2.png') center top no-repeat;
+ transition: 0.3s ease-in-out;
+}
+
+#footer-logo:hover {
+   background-image: url('../images/gylogo.png');
+}
+
+.iris-button-2{
+  font-weight: 400;
+}
