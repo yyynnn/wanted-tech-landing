@@ -514,6 +514,9 @@ stroke-dashoffset: 1000px;
 }
 }
 @media (max-width: 503px) {
+  footer {
+    padding: 26px 20px;
+  }
   .sc1-img{
     transform: scale(0.9);
 transform-origin: center;
