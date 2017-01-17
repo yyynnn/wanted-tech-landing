@@ -346,7 +346,7 @@ footer .has-text-left{
       text-align: center;
       transform: scaleY(1.3) translateY(-50%) translateX(-50%);
       left: 47%;
-      top: 85%;
+      top: 82%;
       z-index: 0;
 }
 .sc1-path-bg{
@@ -771,14 +771,14 @@ hr{
   position: absolute;
 top: 0;
 left: 0;
-  animation: cardInActual 5s infinite alternate ease-in-out;
+  animation: cardInActual 2s infinite alternate ease-in-out;
 }
 #svg3-card-relf
 {
   position: absolute;
 top: 0;
 left: 0;
-  animation: cardInRefl 5s infinite alternate ease-in-out;
+  animation: cardInRefl 2s infinite alternate ease-in-out;
 }
 
 
@@ -786,10 +786,10 @@ left: 0;
 0% {
   transform: translate(0, 0);
 }
-70% {
+50% {
   transform: translate(0, 0);
 }
-80% {
+70% {
   transform: translate(30px, -17.5px);
 }
 100% {
@@ -801,10 +801,10 @@ left: 0;
 100% {
   transform: translate(0, 0);
 }
-80% {
+70% {
   transform: translate(0, 0);
 }
-70% {
+50% {
   transform: translate(30px, -17.5px);
 }
 0% {
@@ -816,7 +816,7 @@ left: 0;
   position: absolute;
 top: 0;
 left: 0;
-  animation: screenFill 5s infinite alternate ease-in-out;
+  animation: screenFill 2s infinite alternate ease-in-out;
 }
 
 .svg3-other,.svg3-screen-refl{
@@ -829,18 +829,18 @@ left: 0;
   100% {
     fill: #008a3e;
   }
-  80% {
+  75% {
     fill: #00be60;
   }
 
-  80% {
+  70% {
     fill: #008a3e;
   }
 
-  78% {
+  58% {
     fill: #00be60;
   }
-73% {
+53% {
   fill: #292b2c;
 }
 0% {
