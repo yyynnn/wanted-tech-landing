@@ -1254,7 +1254,7 @@ ieVersion()
                             request.send(json);
 
                             request.onload = function(event) {
-                                if (request.status >= 200 && request.status < 512) {
+                                if (request.status >= 200 && request.status < 400) {
                                     app.responseSuccess();
                                     var response = JSON.parse(event.currentTarget.response);
                                     if (response.data.code == 404 && response.data.message) {
