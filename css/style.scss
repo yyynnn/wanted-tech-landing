@@ -34,6 +34,11 @@ $white: #ffffff;
   overflow-y: hidden;
 }
 
+html, body, .bodywrap {
+  overflow-x: hidden;
+}
+
+
 textarea, input, html, body { font-family: 'MuseoSansCyrl';text-shadow: 0 0 0.05px #d7d9ea;/*font-size: calc(1rem + 2vw);*/ };
 hr {
     background-color: #eaeaea;
